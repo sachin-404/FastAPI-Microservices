@@ -10,7 +10,14 @@ lint:
 	
 test:
 	python -m pytest -vv --cov=mylib test_logic.py
+
+build:
+	docker build -t wiki-microservice .
+
+run:
+	docker run -p 8000:8000 wiki-microservice
 	
 deploy:
 	# deploy
+
 all: install format lint test deploy
