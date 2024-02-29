@@ -1,4 +1,5 @@
 from mylib.logic import wiki
 
+
 def test_wiki():
-    assert "god" in wiki("War Goddess", 2)
+    assert "god" in wiki()
